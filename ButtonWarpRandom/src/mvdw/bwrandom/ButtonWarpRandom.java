@@ -48,6 +48,11 @@ public class ButtonWarpRandom extends JavaPlugin {
 		if (cmd.getName().equalsIgnoreCase("bwr")) {
 			if (args.length == 0) {
 				// Show Help
+				sender.sendMessage(" §6---------------[ButtonWarpRandom]---------------\n" +
+						"§c/bwr make §f- Create a new random warp\n" + 
+						"§c/bwr edit §f- Edit a random warp\n" + 
+						"§e/bwr [name] §f- Simmulate a warp (with commands)\n" + 
+						"§a/bwr about §f- About the plugin");
 				getLogger().info(
 						"Showing /bwr ? for player '" + player.getName() + "'");
 			} else {
@@ -125,11 +130,11 @@ public class ButtonWarpRandom extends JavaPlugin {
 					}
 				} else if (args[0].equalsIgnoreCase("about")) {
 					// Show about
-					sender.sendMessage("&6-------------[ButtonWarpRandom]-------------"
-							+ "&6Project: ButtonWarpRandom v{VERSION}\n"
-							+ "&6Author: Maxim Van de Wynckel (Maximvdw)\n"
-							+ "&6Site: http://dev.bukkit.org/bukkit-mods/ButtonWarpRandom\n"
-							+ "&6------------------------------------------");
+					sender.sendMessage(" §6---------------[ButtonWarpRandom]---------------\n"
+							+ "§6Project: ButtonWarpRandom v1.0.0\n"
+							+ "§6Author: Maxim Van de Wynckel (Maximvdw)\n"
+							+ "§6Site: http://dev.bukkit.org/bukkit-mods/ButtonWarpRandom\n"
+							+ "§6----------------------------------------------");
 				} else {
 					// Check if it is a warp
 					String bwName = args[0];
