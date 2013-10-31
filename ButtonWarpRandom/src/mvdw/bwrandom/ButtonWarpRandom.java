@@ -198,13 +198,13 @@ public class ButtonWarpRandom extends JavaPlugin {
 		int y = world.getHighestBlockYAt(x, z);
 		location = new Location(world, x, y, z);
 		Biome biome = location.getBlock().getBiome();
-		if (Configuration.BiomesIncluded != null) {
+		if (Configuration.BiomesIncluded.size() != 0) {
 			for (Biome b : Configuration.BiomesIncluded) {
 				if (biome != b) {
 					return randomCoords(world, min, max, xPos, zPos);
 				}
 			}
-		} else if (Configuration.BiomesExcluded != null) {
+		} else if (Configuration.BiomesExcluded.size() != 0) {
 			for (Biome b : Configuration.BiomesExcluded) {
 				if (biome == b) {
 					return randomCoords(world, min, max, xPos, zPos);
