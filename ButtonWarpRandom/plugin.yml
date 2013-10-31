@@ -1,8 +1,18 @@
 main: mvdw.bwrandom.ButtonWarpRandom
-version: 1.0.0
+version: 1.2.2
 name: ButtonWarpRandom
 website: http://dev.bukkit.org/bukkit-plugins/buttonwarprandom/
 author: Maximvdw
 commands:
   bwr:
     description: Utilize the plugin
+permissions:
+  buttonwarprandom.create:
+    description: Allows you to create a random warp
+    default: op
+  buttonwarprandom.commandwarp:
+    description: Allows you to use the commands to warp
+    default: op
+  buttonwarprandom.reload:
+    description: Allows you to reload the configuration
+    default: op
