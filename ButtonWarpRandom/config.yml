@@ -1,16 +1,30 @@
-# ButtonWarpRandom Configuration File
-# Author: Maxim Van de Wynckel
-# --------------------------------------------------
-
-# Included biomes (Overrides Excluded biomes!)
-# SWAMPLAND, FOREST,  TAIGA,  DESERT, PLAINS, HELL, SKY, OCEAN, RIVER, EXTREME_HILLS, FROZEN_OCEAN,
-# FROZEN_RIVERICE_PLAINS, ICE_MOUNTAINS, MUSHROOM_ISLAND, MUSHROOM_SHORE, BEACH,  DESERT_HILLS,
-# FOREST_HILLS, TAIGA_HILLS, SMALL_MOUNTAINS, JUNGLE, JUNGLE_HILLS
+## ButtonWarpRandom Configuration File
+## Author: Maxim Van de Wynckel
+## --------------------------------------------------
+##
+## Available biomes:
+## SWAMPLAND, FOREST,  TAIGA,  DESERT, PLAINS, HELL, SKY, OCEAN, RIVER, EXTREME_HILLS, FROZEN_OCEAN,
+## FROZEN_RIVERICE_PLAINS, ICE_MOUNTAINS, MUSHROOM_ISLAND, MUSHROOM_SHORE, BEACH,  DESERT_HILLS,
+## FOREST_HILLS, TAIGA_HILLS, SMALL_MOUNTAINS, JUNGLE, JUNGLE_HILLS
+##
+## What biomes do you want to include (defaults)
+# included-biomes: []
+## What biomes do you want to exclude (defaults)
+# excluded-biomes:
+# - ocean
+#
+## How many times should BWR try to find the included/excluded biome in the given range?
+# retry: 40
+#
+## Alow ButtonWarpRandom to auto update
+# autoupdate: true
 
 included-biomes: []
-# Excluded biomes 
 excluded-biomes:
 - ocean
 
-# DO NOT EDIT THIS
-config: 1
+retry: 40
+
+autoupdate: true
+
+config: 2
