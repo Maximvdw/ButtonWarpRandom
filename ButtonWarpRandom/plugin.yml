@@ -3,10 +3,14 @@ version: 1.2.2
 name: ButtonWarpRandom
 website: http://dev.bukkit.org/bukkit-plugins/buttonwarprandom/
 author: Maximvdw
+depend: [ButtonWarp]
 commands:
   bwr:
     description: Utilize the plugin
 permissions:
+  buttonwarprandom.edit:
+    description: Allows you to edit a random warp
+    default: op
   buttonwarprandom.create:
     description: Allows you to create a random warp
     default: op

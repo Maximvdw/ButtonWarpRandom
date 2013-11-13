@@ -13,17 +13,12 @@
 # excluded-biomes:
 # - ocean
 #
-## How many times should BWR try to find the included/excluded biome in the given range?
-# retry: 40
-#
 ## Alow ButtonWarpRandom to auto update
 # autoupdate: true
 
 included-biomes: []
 excluded-biomes:
 - ocean
-
-retry: 40
 
 autoupdate: true
 
