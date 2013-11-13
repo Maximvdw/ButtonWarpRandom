@@ -76,7 +76,6 @@ public class ButtonWarpRandom extends JavaPlugin {
 		}
 	}
 
-	@SuppressWarnings("unused")
 	public boolean onCommand(CommandSender sender, Command cmd, String label,
 			String[] args) {
 		Player player = null;
